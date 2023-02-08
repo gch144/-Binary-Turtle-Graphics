@@ -20,24 +20,33 @@ The set position command sets the new coordinates of the turtle. It consists of 
 # Set direction command 
 The set direction command sets the direction in which the turtle will move, when a move command is issued. The direction is defined by the d1, d0 bits.
 # Table 3. The set direction command. 
-![image](https://user-images.githubusercontent.com/64479565/217650914-eb1361e8-70e7-42f8-9eee-fc7052823139.png)
+![image](https://user-images.githubusercontent.com/64479565/217654496-973f75e0-02b4-4087-aad1-493a6fa0bfc8.png)
         
 # Table 4. The description of the d1,d0 bits. 
-![image](https://user-images.githubusercontent.com/64479565/217650963-631fbc99-0db3-45c0-a086-e4afb56f7e05.png)
+![image](https://user-images.githubusercontent.com/64479565/217654574-7b2009ff-8e59-4ff3-bf72-55237bcc76d7.png)
 
 # Move command 
 The move command moves the turtle in direction specified by the d1-d0 bits. The movement distance is defined by the m9-m0 bits. If the destination point is located beyond the drawing area the turtle should stop at the edge of the drawing. It can’t leave the drawing area. The turtle leaves a visible trail when the pen is lowered (bit ud). The color of the trail is defined by the r3-r0, g3-g0, b3-b0 bits. 
-![image](https://user-images.githubusercontent.com/64479565/217651082-d03b26cc-6b3f-4ab4-8f62-0f0095ec7a8d.png)
+# Table 5. The move command.
+![image](https://user-images.githubusercontent.com/64479565/217654672-42e9c418-dc8d-4e87-9589-78cd573b021b.png)
 
 # Set pen state command 
 The pen state command defines whether the pen is raised or lowered (bit ud) and the color of the trail. Bits r3-r0 are the most significant bits of the 8-bits red component of the color (remaining bits are set to zero). Bits g3-g0 are the most significant bits of the 8-bits green component of the color (remaining bits are set to zero). Bits b3-b0 are the most significant bits of the 8-bits blue component of the color (remaining bits are set to zero). 
 
-![image](https://user-images.githubusercontent.com/64479565/217651216-44cbdfbd-0e13-4438-b43b-ece002d80247.png)
+# Table 6. The pen state command.
+![image](https://user-images.githubusercontent.com/64479565/217654781-439d6e10-cfa2-41ca-b3f1-f0019327f830.png)
+
+# Table 7. The description of the ud bit.
+![image](https://user-images.githubusercontent.com/64479565/217654848-68e23c69-23d5-467b-bd66-4b7636a574f3.png)
+
+
 
 # input input.bin
 16/32 bit binary commands in a following form.
 
 # output output.bmp
 600 x 50 image with the implemented changes.
+
+
 
         
