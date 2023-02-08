@@ -1,9 +1,3 @@
-##################
-# Gaurav Chauhan #
-#     309602     #
-##################
-
-
 .eqv	error_binary -1 # error loading the binary
 .eqv	error_LBMP	-2 # error loading the bitmap template
 .eqv	error_SBMP	-3 # error saving the bitmap result
