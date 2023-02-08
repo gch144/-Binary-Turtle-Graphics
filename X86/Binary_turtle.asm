@@ -1,5 +1,4 @@
-;;;;;;;;;;;Gaurav Chauhan;;;;
-;;;;;;;;;;;309602 ;;;;;;;;;;;
+
 bits 32
 
 ;	extern int turtle(
