@@ -1,4 +1,4 @@
-# -Binary-Turtle-Graphics
+# Binary_Turtle_Graphics
 # RISC-V & x86 NASM Implementation of turtle graphics.
 # Description
 In the project I have created a command like version of the turtles graphics. Code accepts .bin file format with the commands in a binary form.
