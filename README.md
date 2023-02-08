@@ -12,14 +12,17 @@ The set position command sets the new coordinates of the turtle. It consists of 
 
 # Table 1.The first word of the set position command. 
 
-![image](https://user-images.githubusercontent.com/64479565/217650851-82c92958-239c-4e27-99ff-131229eaf7f3.png)
+![image](https://user-images.githubusercontent.com/64479565/217654181-dc8b54ea-c433-468a-bfa2-c721a42b3f93.png)
+# Table 2. The second word of the set position command.
+![image](https://user-images.githubusercontent.com/64479565/217654272-392f07e7-b26f-4b84-9087-2b46a5389256.png)
+
 
 # Set direction command 
 The set direction command sets the direction in which the turtle will move, when a move command is issued. The direction is defined by the d1, d0 bits.
-
+# Table 3. The set direction command. 
 ![image](https://user-images.githubusercontent.com/64479565/217650914-eb1361e8-70e7-42f8-9eee-fc7052823139.png)
         
-#Table 4. The description of the d1,d0 bits. 
+# Table 4. The description of the d1,d0 bits. 
 ![image](https://user-images.githubusercontent.com/64479565/217650963-631fbc99-0db3-45c0-a086-e4afb56f7e05.png)
 
 # Move command 
