@@ -12,29 +12,24 @@ The set position command sets the new coordinates of the turtle. It consists of 
 
 Table 1.The first word of the set position command. 
 
-bit no. |15 | 14| 13| 12| 11| 10| 9| 8|
-        | - | - | - | - | - | - | -| -|
-bit no. | 7 | 6 | 5 | 4 | 3 | 2 | 1| 0|
-        |y5 | y4| y3| y2| y1| y0| 1| 1|
-        
-Table 2. The second word of the set position command
-
-bit no. |15 | 14| 13| 12| 11| 10| 9| 8|
-        | - | - | - | - | - | - |x9|x8|
-bit no. | 7 | 6 | 5 | 4 | 3 | 2 | 1| 0|
-        |x7 | x6| x5| x4| x3| x2|x1|x0|
+![image](https://user-images.githubusercontent.com/64479565/217650851-82c92958-239c-4e27-99ff-131229eaf7f3.png)
 
 Set direction command 
 The set direction command sets the direction in which the turtle will move, when a move command is issued. The direction is defined by the d1, d0 bits.
 
-Table 3. The set direction command. 
-bit no. |15 | 14| 13| 12| 11| 10| 9| 8|
-        | d1| d0| - | - | - | - | -| -|
-bit no. | 7 | 6 | 5 | 4 | 3 | 2 | 1| 0|
-        | - | - | - | - | - | - | 1| 0|
+![image](https://user-images.githubusercontent.com/64479565/217650914-eb1361e8-70e7-42f8-9eee-fc7052823139.png)
         
 Table 4. The description of the d1,d0 bits. 
-![image](https://user-images.githubusercontent.com/64479565/217650523-41ce8d0e-ef59-413e-83ce-ccce240a2efb.png)
+![image](https://user-images.githubusercontent.com/64479565/217650963-631fbc99-0db3-45c0-a086-e4afb56f7e05.png)
+
+Move command 
+The move command moves the turtle in direction specified by the d1-d0 bits. The movement distance is defined by the m9-m0 bits. If the destination point is located beyond the drawing area the turtle should stop at the edge of the drawing. It can’t leave the drawing area. The turtle leaves a visible trail when the pen is lowered (bit ud). The color of the trail is defined by the r3-r0, g3-g0, b3-b0 bits. 
+![image](https://user-images.githubusercontent.com/64479565/217651082-d03b26cc-6b3f-4ab4-8f62-0f0095ec7a8d.png)
+
+Set pen state command 
+The pen state command defines whether the pen is raised or lowered (bit ud) and the color of the trail. Bits r3-r0 are the most significant bits of the 8-bits red component of the color (remaining bits are set to zero). Bits g3-g0 are the most significant bits of the 8-bits green component of the color (remaining bits are set to zero). Bits b3-b0 are the most significant bits of the 8-bits blue component of the color (remaining bits are set to zero). 
+
+![image](https://user-images.githubusercontent.com/64479565/217651216-44cbdfbd-0e13-4438-b43b-ece002d80247.png)
 
 input input.bin
 16/32 bit binary commands in a following form.
